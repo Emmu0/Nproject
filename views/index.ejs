@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0%;
+      padding: 0%;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+      background-color: #0066cc;
+    }
+
+    .box {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ff6600;
+      height: 200px;
+      width: 400px;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+    }
+
+
+    input {
+      height: 100%;
+      width: 100%;
+      outline: #0066cc;
+      display: block;
+      border-radius: 2px;
+      margin: 15px 0;
+      padding: 2px 5px;
+      border-radius: 5px;
+
+    }
+
+    .box img {
+      height: 70px;
+      width: 70px;
+      border-radius: 100%;
+      border: 5px solid #0066cc;
+      position: absolute;
+      top: -3px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <form action="/fd" method="GET">
+      <!-- <input type="search" placeholder="search"> -->
+    </form>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNCiOBj3q6IRinqtqakJ1KbCFezayJzdVcJA&usqp=CAU"
+      alt="pic.jpg">
+    <form action="/reg" method="POST">
+      <input type="text" name="name" placeholder="username">
+      <input type="email" name="email" placeholder="Email">
+      <a href=""><input type="submit"></a>
+    </form>
+  </div>
+</body>
+
+</html>
